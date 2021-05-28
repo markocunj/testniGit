@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import ExampleFormRenderer from "../views/ExampleFormRenderer.vue";
+import PremadeForm from "../views/PremadeForm.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/ExampleFormRenderer",
     name: "ExampleFormRenderer",
     component: ExampleFormRenderer,
+  },
+  {
+    path: "/PremadeForm",
+    name: "PremadeForm",
+    component: PremadeForm,
   },
   {
     path: "/",
