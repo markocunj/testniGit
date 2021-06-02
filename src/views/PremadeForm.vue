@@ -127,7 +127,7 @@ export default {
             ],
             autocompleteLink: "",
             autocomplete: ["WA", "IT", "ICT", "MIS", "PIS", "IKT"],
-            multiple: false,
+            multiple: true,
           },
           "control-f1590b76-8c04-4126-a17b-9ae3b5909f2f": {
             uniqueId: "control-f1590b76-8c04-4126-a17b-9ae3b5909f2f",

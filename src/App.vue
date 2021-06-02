@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav" style="text-justify: center">
       <router-link to="/">Form Builder</router-link> |
-      <router-link to="/ExampleFormRenderer">Form you choose</router-link> |
+      <router-link to="/ExampleFormRenderer">Form you chose</router-link> |
       <router-link to="/PremadeForm">Form premade example</router-link>
     </div>
     <router-view />
