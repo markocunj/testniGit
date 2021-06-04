@@ -443,7 +443,7 @@ export default {
         maxSize: 1000,
         isMultiple: false,
         maximumFiles: 1,
-        defaultDropzoneMessage: "Drop your files here",
+        defaultDropzoneMessage: "&#9729; Drop your files here",
         buttonLabel: "Select File",
         buttonClasses: "btn btn-primary",
         accept: "image/gif,image/jpeg,image/png",
