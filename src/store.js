@@ -146,6 +146,11 @@ export default {
         rows: [],
         validations: [
           {
+            ruleType: "required",
+            errorMessage: "This field is required",
+            additionalValue: "",
+          },
+          {
             ruleType: "isEmail",
             errorMessage: "Wrong email address format",
             additionalValue: "",
