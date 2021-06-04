@@ -125,5 +125,13 @@ export default {
       }
     },
   },
+  created() {
+    if (localStorage.getItem("premadeForm")) {
+      this.formDataArray.push("premadeForm");
+    } else {
+      this.formDataArray.push("premadeForm");
+      localStorage.setItem("premadeForm", JSON.stringify(store.premadeForm));
+    }
+  },
 };
 </script>
