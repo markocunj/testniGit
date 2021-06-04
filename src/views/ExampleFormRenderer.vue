@@ -1,26 +1,56 @@
 <template>
   <div>
     <div class="text-center">
-      <input
-        type="text"
-        id="text"
-        v-model="name"
-        placeholder="Enter your form name"
-        class="form-control mx-auto"
-        style="max-width: 300px;"
-      /><br />
-      <button type="button" class="btn btn-success" @click="getFormData()">
-        Test
-      </button>
-      <button
-        type="button"
-        class="btn btn-info"
-        style="margin-left: 5px;"
-        @click="getListOfForms()"
+      {{ getListOfForms }}
+      <table
+        class="table table-dark mx-auto"
+        style="max-width: 700px; margin-top: 10px;"
       >
-        List of saved forms
-      </button>
-
+        <thead>
+          <tr>
+            <th scope="col">Form name</th>
+            <th scope="col">Options</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody v-for="(formDataInput, index) in formDataArray" :key="index">
+          <tr>
+            <td>{{ formDataInput }}</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-outline-light btn-sm"
+                style="margin-left: 5px;"
+                @click="getFormData(formDataInput)"
+              >
+                Test
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-light btn-sm"
+                style="margin-left: 5px;"
+                @click="editData(formDataInput)"
+              >
+                Edit
+              </button>
+            </td>
+            <td>
+              <button
+                v-if="formDataInput != 'premadeForm'"
+                type="button"
+                class="btn btn-outline-danger btn-sm"
+                style="margin-left: 5px;"
+                @click="remove(index, formDataInput)"
+              >
+                &#10005;
+              </button>
+              <div v-else>
+                Unable to remove.
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <br />
       <div v-if="failed">
         <br />
@@ -29,32 +59,14 @@
         </div>
       </div>
     </div>
-    <div class="text-center" v-if="empty">
-      <strong
-        >There are no saved forms! Go to Form Builder, and make one</strong
-      >
-    </div>
-    <div class="text-center" v-if="formDataArray.length > 0">
-      <strong>List of forms:</strong>
-      <div v-for="(formDataInput, index) in formDataArray" :key="index">
-        {{ formDataInput }}
-      </div>
-    </div>
     <div v-if="test">
       <FormRenderer :formConfiguration="formData" v-model="formInputData" />
-    </div>
-    <div v-if="test" class="text-center">
-      <hr style="width 70%" />
-
-      <small
-        >If you are not satisfied with your form, go back to Form builder and
-        edit it!</small
-      >
     </div>
   </div>
 </template>
 <script>
 import { FormRenderer } from "v-form-builder";
+import store from "@/store.js";
 export default {
   components: {
     FormRenderer,
@@ -73,6 +85,33 @@ export default {
     };
   },
   methods: {
+    editData(ime) {
+      store.transfer = {
+        name: ime,
+        formData: JSON.parse(localStorage.getItem(ime)),
+      };
+      this.$router.push({ name: "FormBuilder" });
+    },
+    getFormData(formIme) {
+      if (!JSON.parse(localStorage.getItem(formIme))) {
+        this.failed = true;
+      } else {
+        this.formData = JSON.parse(localStorage.getItem(formIme));
+        this.formDataArray = [];
+        this.test = true;
+        this.failed = false;
+      }
+    },
+    remove(index, name) {
+      localStorage.removeItem(name);
+      for (let i = 0; i < this.formDataArray.length; i++) {
+        if (index == this.formDataArray.indexOf(this.formDataArray[i])) {
+          this.formDataArray.splice(index, 1);
+        }
+      }
+    },
+  },
+  computed: {
     getListOfForms() {
       let keys = Object.keys(localStorage);
       this.formDataArray = [];
@@ -83,16 +122,6 @@ export default {
       }
       if (this.formDataArray.length < 1) {
         this.empty = true;
-      }
-    },
-    getFormData() {
-      if (!JSON.parse(localStorage.getItem(this.name))) {
-        this.failed = true;
-      } else {
-        this.formData = JSON.parse(localStorage.getItem(this.name));
-        this.formDataArray = [];
-        this.test = true;
-        this.failed = false;
       }
     },
   },

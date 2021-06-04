@@ -2,10 +2,14 @@
   <div id="app">
     <div id="nav" style="text-justify: center">
       <router-link to="/">Form Builder</router-link> |
-      <router-link to="/ExampleFormRenderer">Form you chose</router-link> |
+      <router-link to="/ExampleFormRenderer">Chosen forms</router-link> |
       <router-link to="/PremadeForm">Form premade example</router-link>
     </div>
-    <router-view />
+    <main class="App__main">
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
+    </main>
   </div>
 </template>
 
@@ -23,5 +27,16 @@
       color: #7e92d6;
     }
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>
