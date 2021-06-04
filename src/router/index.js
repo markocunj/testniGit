@@ -11,11 +11,6 @@ const routes = [
     name: "ExampleFormRenderer",
     component: ExampleFormRenderer,
   },
-  {
-    path: "/PremadeForm",
-    name: "PremadeForm",
-    component: PremadeForm,
-  },
 
   {
     path: "/",

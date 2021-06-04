@@ -2,8 +2,7 @@
   <div id="app">
     <div id="nav" style="text-justify: center">
       <router-link to="/">Form Builder</router-link> |
-      <router-link to="/ExampleFormRenderer">Chosen forms</router-link> |
-      <router-link to="/PremadeForm">Form premade example</router-link>
+      <router-link to="/ExampleFormRenderer">Saved forms</router-link>
     </div>
     <main class="App__main">
       <transition name="fade" mode="out-in">
