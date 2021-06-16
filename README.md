@@ -1,4 +1,4 @@
-# README
+# Vue Form Builder
 
 ## Opći podaci o projektu
 
@@ -45,5 +45,17 @@ Neke od značajki „Vue-multiselecta“ su:
 - padajući izbornik (engl. dropdowns)
 - mogućnost dohvaćanja podataka iz „pozadine“ (engl. back-end)
 
-![Test](/images/logo.png)
-Format: ![Alt Text](url)
+Unutar opcija odabira korisniku je omogućen izbor između umetanja dijelova za automatsko ručno popunjavanje polja ili upisivanje hiperveze koja vodi do polja koje se potom uključuje u kod. Također, postoji mogućnost kojom korisnik može odabrati višestruki unos.
+
+!(/images/Slika1.png)
+
+### Vue Dropzone
+
+Vue2-dropzone je komponenta koja je uključena u ovaj rad kao zamjena za „Vue-upload-component“. Vue2-dropzone je inačica „dropzone.js“ paketa koji je razvijen za „JavaScript“ programski jezik, ali za Vue okruženje.
+
+!(/images/Slika2.png)
+
+Uspješno učitana datoteka se nalazi na lijevoj strani te ona zadovoljava kriterije koji su napisani u opisu, za razliku od drugog dokumenta koji ima nedozvoljenu ekstenziju te samim time nije prihvaćen u učitavanje datoteke.
+
+- Validacija na Vue Dropzoneu izgleda ovako:
+  !(/images/Slika3.png)
