@@ -21,7 +21,10 @@ npm install https://github.com/markocunj/vue-form-builder
 
 ### Referenca na glavni projekt
 
-Link: [Vue Form Builder](https://github.com/sethsandaru/vue-form-builder).
+Link: [Vue Form Builder](https://github.com/markocunj/vue-form-builder).
+
+Link na projekt bez nadogradnji: [Vue Form Builder - without upgrades](https://github.com/sethsandaru/vue-form-builder)
+
 Glavna dokumentacija o projektu: [Vue Form Builder - dokumentacija](https://phattranminh96.gitbook.io/vue-form-builder/).
 
 ### Demo link
