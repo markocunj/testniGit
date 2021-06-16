@@ -9,11 +9,11 @@ Mentor: doc. dr. sc. Nikola Tanković
 Kolegij: Programsko inženjerstvo
 ```
 
-### Sažetak
+## Sažetak
 
 Primjena i izrada korisničkih obrazaca predstavlja prilično veliki izazov u nedostatku vremena, ali i novaca za izradu korisničkog obrasca. Ovaj projekt programera iz Vijetnama s nadogradnjama uvelike olakšava proces izrade tih korisničkih obrazaca, kao i raspolaganje podacima koje krajnji korisnik upisuje, a programer sprema u bazu podataka ili koristi na način koji mu je potreban. Uporaba ovog projekta je relativno jednostavna. Samo upoznavanje s funkcijama je maksimalno olakšano. Svatko tko se i malo razumije u Vue okruženje, s osnovnim znanjem, može se koristiti ovim projektom i svim njegovim funkcionalnostima.
 
-### Instalacija projekta
+## Kako instalirati?
 
 ```
 npm install https://github.com/markocunj/vue-form-builder
@@ -60,3 +60,16 @@ Uspješno učitana datoteka se nalazi na lijevoj strani te ona zadovoljava krite
 - Validacija na Vue Dropzoneu izgleda ovako:
 
 ![Validacija](/images/Slika3.png)
+
+### Dependencies (ovisnosti)
+
+- „Axios“ – služi za izradu HTTP zahtjeva iz „node.js“ i igra vitalnu ulogu u dohvaćanju podataka iz „pozadine“ (engl. back-end) kao i slanja tih podataka natrag na „pozadinu“
+- „Core-js „– paket za „JavaScript“ koji uključuje „obećanja“ (engl. promise), simbole, kolekcije, iteratore (engl. iterators), polja (engl. arrays) i mnoge ostale funkcionalnosti
+- „Dayjs“ – služi za prepoznavanje, validaciju, manipuliranje i prikaz datuma i vremena za moderne pretraživače poput „Google Chromea“ itd., radi u skladu s „Moment.js“
+- „Litepicker“ – služi za prikazivanje datuma, odnosno raspona datuma (nekoliko mjeseci, jedan datum ili raspon datuma), moguć višestruk odabir itd.
+- „Vue-axios“ – predstavlja „Axios“ dodatak, ali za Vue okruženje, pomaže pri integraciji „Axios“ u Vue
+- „Vue-class-component“ – paket koji dopušta programeru raditi svoje Vue komponente u stil (engl. style) sintaksi
+- „Vue-multiselect“ – opisan u poglavlju 3.5. dokumentacije, služi kao mogućnost automatskog popunjavanja polja, metodu koja je uključena u ovaj projekt
+- „Vue-property-decorator“ – paket koji ovisi o „Vue-class-component“ paketu te popunjava neke njegove nedostatke
+- „Vue2-dropzone“ – komponenta koja omogućuje „primi i pusti“ opciju (eng. „drag & drop“) za odabir datoteka koje korisnik želi učitati na određenu stranicu. U poglavlju 3.6. su detaljnije objašnjeni dijelovi ove komponente i njena uključenost u projekt.
+- „Vuedraggable“ – omogućuje „primi i pusti“ opciju (eng. „drag & drop“) i sinkronizaciju s poljem u kojem su spremljene kontrole.
