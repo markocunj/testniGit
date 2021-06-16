@@ -1,19 +1,20 @@
-# vjezba
+# README
 
-## Project setup
-```
-npm install
-```
+## Opći podaci o projektu
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
-```
+Autor projekta: Marko Cunj
 
-### Compiles and minifies for production
-```
-npm run build
+Mentor: doc. dr. sc. Nikola Tanković
+Kolegij: Programsko inženjerstvo
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Instalacija projekta
+
+```
+npm install https://github.com/markocunj/vue-form-builder
+```
+
+### Glavna referenca na projekt koji sam nadograđivao
+
+Link: [Configuration Reference](https://github.com/sethsandaru/vue-form-builder).
