@@ -69,7 +69,7 @@ Uspješno učitana datoteka se nalazi na lijevoj strani te ona zadovoljava krite
 - „Litepicker“ – služi za prikazivanje datuma, odnosno raspona datuma (nekoliko mjeseci, jedan datum ili raspon datuma), moguć višestruk odabir itd.
 - „Vue-axios“ – predstavlja „Axios“ dodatak, ali za Vue okruženje, pomaže pri integraciji „Axios“ u Vue
 - „Vue-class-component“ – paket koji dopušta programeru raditi svoje Vue komponente u stil (engl. style) sintaksi
-- „Vue-multiselect“ – opisan u poglavlju 3.5. dokumentacije, služi kao mogućnost automatskog popunjavanja polja, metodu koja je uključena u ovaj projekt
+- „Vue-multiselect“ – služi kao mogućnost automatskog popunjavanja polja, metodu koja je uključena u ovaj projekt
 - „Vue-property-decorator“ – paket koji ovisi o „Vue-class-component“ paketu te popunjava neke njegove nedostatke
-- „Vue2-dropzone“ – komponenta koja omogućuje „primi i pusti“ opciju (eng. „drag & drop“) za odabir datoteka koje korisnik želi učitati na određenu stranicu. U poglavlju 3.6. su detaljnije objašnjeni dijelovi ove komponente i njena uključenost u projekt.
+- „Vue2-dropzone“ – komponenta koja omogućuje „primi i pusti“ opciju (eng. „drag & drop“) za odabir datoteka koje korisnik želi učitati na određenu stranicu.
 - „Vuedraggable“ – omogućuje „primi i pusti“ opciju (eng. „drag & drop“) i sinkronizaciju s poljem u kojem su spremljene kontrole.
