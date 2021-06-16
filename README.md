@@ -47,15 +47,16 @@ Neke od značajki „Vue-multiselecta“ su:
 
 Unutar opcija odabira korisniku je omogućen izbor između umetanja dijelova za automatsko ručno popunjavanje polja ili upisivanje hiperveze koja vodi do polja koje se potom uključuje u kod. Također, postoji mogućnost kojom korisnik može odabrati višestruki unos.
 
-!(/images/Slika1.png)
+![Opcenito multiselect](/images/Slika1.png)
 
 ### Vue Dropzone
 
 Vue2-dropzone je komponenta koja je uključena u ovaj rad kao zamjena za „Vue-upload-component“. Vue2-dropzone je inačica „dropzone.js“ paketa koji je razvijen za „JavaScript“ programski jezik, ali za Vue okruženje.
 
-!(/images/Slika2.png)
+![Vue-dropzone](/images/Slika2.png)
 
 Uspješno učitana datoteka se nalazi na lijevoj strani te ona zadovoljava kriterije koji su napisani u opisu, za razliku od drugog dokumenta koji ima nedozvoljenu ekstenziju te samim time nije prihvaćen u učitavanje datoteke.
 
 - Validacija na Vue Dropzoneu izgleda ovako:
-  !(/images/Slika3.png)
+
+![Validacija](/images/Slika3.png)
